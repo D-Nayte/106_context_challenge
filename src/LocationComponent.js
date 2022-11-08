@@ -3,7 +3,6 @@ import { UserContext } from "./UserContext";
 
 // This component displays location from context
 const Location = () => {
-  const user = ""; //YOUR CODE HERE
   const { location } = useContext(UserContext); //YOUR CODE HERE
 
   return (
