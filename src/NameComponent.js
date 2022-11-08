@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
+import { UserContext } from "./UserContext";
 
 // This component displays name from Context
 const RandomComponent = () => {
-    const user =''; //YOUR CODE HERE
+  const { name } = useContext(UserContext); //YOUR CODE HERE
 
-    return (
+  return (
     <div style={{ marginTop: "30px" }}>
       <h2 className="is-size-4">
         {/* Pass name from context here */}
-        <strong>Name</strong>: {"William"}
+        <strong>Name</strong>: {name}
       </h2>
     </div>
   );
